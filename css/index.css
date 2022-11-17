@@ -1,0 +1,177 @@
+@keyframes fade {
+    0% {
+        opacity: 0;
+   }
+    50% {
+        opacity: 0.5;
+   }
+    100% {
+        opacity: 1;
+   }
+}
+nav ul {
+    margin: 1rem 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+}
+nav a {
+    margin: 0 1rem;
+    color: #566b78;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: flex;
+    align-items: flex-start;
+}
+.app > * {
+    display: none;
+}
+.app > *:last-child {
+    display: block;
+}
+.app > *:target {
+    display: block;
+    animation: fade 300ms linear 1;
+}
+.app > *:target ~ * {
+    display: none;
+}
+body {
+    background-color: #ddd;
+    color: #566b78;
+    font-family: 'Inconsolata', monospace;
+    font-size: 18px;
+    line-height: 1.5;
+}
+h1, h2, strong {
+    color: #333;
+}
+a {
+    color: #000;
+}
+header {
+    background-color: gray;
+    line-height: 1.2;
+    padding: 8vw 2em;
+    text-align: center;
+}
+header h1 {
+    color: #fff;
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+header a {
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 0.8em;
+    letter-spacing: 0.2em;
+    padding: 1em 2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: none 200ms;
+    transition-property: color, background, border;
+}
+header a:hover {
+    background: crimson;
+    border-color: crimson;
+}
+.nes-header {
+    background-color: #7c7c7c;
+    background-color: #000;
+   /* Fallback Color */
+    background-image: -webkit-gradient(linear, 90deg, from(#7c7c7c), to(#000));
+   /* Saf4+, Chrome */
+    background-image: -webkit-linear-gradient(90deg, #7c7c7c, #000);
+   /* Chrome 10+, Saf5.1+, iOS 5+ */
+    background-image: -moz-linear-gradient(90deg, #7c7c7c, #000);
+   /* FF3.6 */
+    background-image: -ms-linear-gradient(90deg, #7c7c7c, #000);
+   /* IE10 */
+    background-image: -o-linear-gradient(90deg, #7c7c7c, #000);
+   /* Opera 11.10+ */
+    background-image: linear-gradient(90deg, #7c7c7c, #000);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=$angle,StartColorStr="#7c7c7c", EndColorStr="#000");
+}
+.nes-header a:hover {
+    background: #a81000;
+    border-color: #a81000;
+}
+.snes-header {
+    background-color: #f12934;
+    background-color: #f8ea57;
+   /* Fallback Color */
+    background-image: -webkit-gradient(linear, 90deg, from(#f12934), to(#f8ea57));
+   /* Saf4+, Chrome */
+    background-image: -webkit-linear-gradient(90deg, #f12934, #f8ea57);
+   /* Chrome 10+, Saf5.1+, iOS 5+ */
+    background-image: -moz-linear-gradient(90deg, #f12934, #f8ea57);
+   /* FF3.6 */
+    background-image: -ms-linear-gradient(90deg, #f12934, #f8ea57);
+   /* IE10 */
+    background-image: -o-linear-gradient(90deg, #f12934, #f8ea57);
+   /* Opera 11.10+ */
+    background-image: linear-gradient(90deg, #f12934, #f8ea57);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=$angle,StartColorStr="#f12934", EndColorStr="#f8ea57");
+}
+.snes-header a:hover {
+    background: #009554;
+    border-color: #009554;
+}
+.n64-header {
+    background-color: #069330;
+    background-color: #ffc001;
+   /* Fallback Color */
+    background-image: -webkit-gradient(linear, 90deg, from(#069330), to(#ffc001));
+   /* Saf4+, Chrome */
+    background-image: -webkit-linear-gradient(90deg, #069330, #ffc001);
+   /* Chrome 10+, Saf5.1+, iOS 5+ */
+    background-image: -moz-linear-gradient(90deg, #069330, #ffc001);
+   /* FF3.6 */
+    background-image: -ms-linear-gradient(90deg, #069330, #ffc001);
+   /* IE10 */
+    background-image: -o-linear-gradient(90deg, #069330, #ffc001);
+   /* Opera 11.10+ */
+    background-image: linear-gradient(90deg, #069330, #ffc001);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=$angle,StartColorStr="#069330", EndColorStr="#ffc001");
+}
+.n64-header a {
+    border: 2px solid #fff;
+    color: #fff;
+}
+.n64-header a:hover {
+    background: #ffc001;
+    border-color: #ffc001;
+}
+.gc-header {
+    background-color: #6549c2;
+    background-color: #92929a;
+   /* Fallback Color */
+    background-image: -webkit-gradient(linear, 90deg, from(#6549c2), to(#92929a));
+   /* Saf4+, Chrome */
+    background-image: -webkit-linear-gradient(90deg, #6549c2, #92929a);
+   /* Chrome 10+, Saf5.1+, iOS 5+ */
+    background-image: -moz-linear-gradient(90deg, #6549c2, #92929a);
+   /* FF3.6 */
+    background-image: -ms-linear-gradient(90deg, #6549c2, #92929a);
+   /* IE10 */
+    background-image: -o-linear-gradient(90deg, #6549c2, #92929a);
+   /* Opera 11.10+ */
+    background-image: linear-gradient(90deg, #6549c2, #92929a);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=$angle,StartColorStr="#6549c2", EndColorStr="#92929a");
+}
+.gc-header a {
+    border: 2px solid #fff;
+    color: #fff;
+}
+.gc-header a:hover {
+    background: #000;
+    border-color: #000;
+}
+.container {
+    margin: 0 auto;
+    max-width: 50em;
+    padding: 4em 2em;
+}
